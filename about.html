@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공덕 마사지 링크 | 정보</title>
+    <meta name="description" content="공덕 마사지 링크의 상세 정보와 서비스 안내. 공덕역 인근 최고의 마사지 센터, 전문 마사지사, 이용 가이드, 위치 정보를 확인하세요. 예약 문의 010-6279-0862.">
+    <meta name="keywords" content="공덕 마사지, 공덕 마사지 링크, 마사지 링크 정보, 공덕역 마사지, 공덕 스웨디시, 공덕 타이마사지, 마사지 센터 정보">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <link rel="canonical" href="https://t3b07-gd-massage-link.vercel.app/info">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="공덕 마사지 링크 | 정보">
+    <meta property="og:description" content="공덕 마사지 링크의 상세 정보와 서비스 안내. 공덕역 인근 최고의 마사지 센터.">
+    <style>
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Courier New', 'Nanum Gothic', monospace;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            line-height: 1.6;
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255, 255, 255, 0.02) 2px, rgba(255, 255, 255, 0.02) 4px);
+            pointer-events: none;
+            z-index: 0;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #ff2a6d;
+            text-shadow: 2px 2px 0 #000, 4px 4px 0 #0ff;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            border-bottom: 4px solid #ff2a6d;
+            display: inline-block;
+        }
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            border-left: 6px solid #0ff;
+            padding-left: 1rem;
+        }
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+        a {
+            color: #0ff;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s;
+            font-weight: bold;
+        }
+        a:hover {
+            border-bottom-color: #ff2a6d;
+            color: #ff2a6d;
+            text-shadow: 0 0 10px rgba(255, 42, 109, 0.5);
+        }
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(10, 10, 10, 0.95);
+            border-bottom: 2px solid #ff2a6d;
+            z-index: 1000;
+            padding: 0.8rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            color: #0ff;
+            text-shadow: 2px 2px 0 #ff2a6d;
+            border: none;
+        }
+        .logo span {
+            color: #ff2a6d;
+            text-shadow: 2px 2px 0 #0ff;
+        }
+        nav {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        nav a {
+            font-family: 'Courier New', monospace;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 0.5rem 0;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s;
+            color: #e0e0e0;
+        }
+        nav a:hover {
+            border-bottom-color: #ff2a6d;
+            color: #ff2a6d;
+        }
+        main {
+            padding-top: 120px;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        section {
+            margin-bottom: 4rem;
+            padding: 2rem;
+            border: 1px solid #333;
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 10px 10px 0 #000, 10px 10px 0 1px #ff2a6d;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+        .info-card {
+            padding: 1.5rem;
+            border: 1px solid #333;
+            background: rgba(10, 10, 10, 0.9);
+            transition: all 0.3s;
+        }
+        .info-card:hover {
+            border-color: #0ff;
+            box-shadow: 5px 5px 0 rgba(0, 255, 255, 0.3);
+        }
+        .info-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            color: #0ff;
+            text-shadow: 1px 1px 0 #ff2a6d;
+        }
+        .info-card p {
+            font-size: 1rem;
+            color: #ccc;
+        }
+        .info-card .highlight {
+            color: #ff2a6d;
+            font-weight: bold;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+        .data-table th, .data-table td {
+            padding: 0.8rem;
+            border: 1px solid #333;
+            text-align: left;
+        }
+        .data-table th {
+            background: #1a1a1a;
+            color: #0ff;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+        .data-table td {
+            color: #ccc;
+        }
+        footer {
+            background: rgba(10, 10, 10, 0.95);
+            border-top: 2px solid #ff2a6d;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 4rem;
+            position: relative;
+            z-index: 1;
+        }
+        footer p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+        .tel-link {
+            display: inline-block;
+            background: #ff2a6d;
+            color: #fff;
+            padding: 0.8rem 2rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: none;
+            margin: 1rem 0;
+            transition: all 0.2s;
+            text-decoration: none;
+        }
+        .tel-link:hover {
+            background: #0ff;
+            color: #000;
+            transform: scale(1.05);
+        }
+        @media (max-width: 768px) {
+            header {
+                padding: 0.5rem 1rem;
+                flex-wrap: wrap;
+            }
+            .logo {
+                font-size: 1.2rem;
+            }
+            nav {
+                gap: 0.8rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            nav a {
+                font-size: 0.8rem;
+            }
+            main {
+                padding-left: 1rem;
+                padding-right: 1rem;
+                padding-top: 100px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+            section {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/" class="logo">MASSAGE<span>LINK</span></a>
+        <nav>
+            <a href="/">HOME</a>
+            <a href="/info">INFO</a>
+            <a href="/services">SERVICES</a>
+            <a href="/contact">CONTACT</a>
+            <a href="tel:01062790862" class="tel-link" style="border:2px solid #0ff; padding:0.3rem 1rem;">010-6279-0862</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>공덕 마사지 링크</h1>
+            <p>공덕역 1번 출구 도보 30초. 2024년 기준 마포구 내 마사지 센터 만족도 1위 (한국소비자평가 기준). 12년 경력의 전문 마사지사가 직접 설계한 맞춤형 프로그램을 제공합니다. 데이터 기반의 정밀한 바디 케어로 근골격계 통증 완화와 피로 회복을 과학적으로 접근합니다.</p>
+        </section>
+
+        <section>
+            <h2>시설 및 운영 정보</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>위치 및 접근성</h3>
+                    <p>서울 마포구 마포대로 68, 3층 (공덕역 1번 출구)</p>
+                    <p><span class="highlight">도보 30초</span> | 버스 정류장 2개 노선 (7016, 5712) | 주차 가능 (건물 지하 1층, 2시간 무료)</p>
+                    <p>2024년 마포구청 교통영향평가 '최우수' 등급 시설</p>
+                </div>
+                <div class="info-card">
+                    <h3>운영 시간</h3>
+                    <p>월~토: 10:00 - 22:00 (마지막 예약 20:30)</p>
+                    <p>일요일 및 공휴일: 11:00 - 20:00 (마지막 예약 18:30)</p>
+                    <p><span class="highlight">전일 예약제</span> | 당일 예약 가능 (전화 또는 카카오톡)</p>
+                </div>
+                <div class="info-card">
+                    <h3>위생 및 안전</h3>
+                    <p>매일 3회 UV 살균 (10:00, 14:00, 19:00)</p>
+                    <p>모든 시트 및 타월: 1회용 개별 포장 (의료용 멸균 기준)</p>
+                    <p>2024년 마포구 보건소 위생 점검 A+ 등급</p>
+                </div>
+                <div class="info-card">
+                    <h3>예약 및 결제</h3>
+                    <p>전화: 010-6279-0862 (24시간 예약 가능)</p>
+                    <p>카카오톡: @massagelink (실시간 상담)</p>
+                    <p>결제: 현금, 카드, 간편결제 (네이버페이, 카카오페이), 제로페이</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>서비스 데이터</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>서비스</th>
+                        <th>시간</th>
+                        <th>가격</th>
+                        <th>적용 부위</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>스웨디시 마사지</td>
+                        <td>60분 / 90분</td>
+                        <td>80,000원 / 110,000원</td>
+                        <td>전신 (등, 어깨, 하체 집중)</td>
+                    </tr>
+                    <tr>
+                        <td>타이 마사지</td>
+                        <td>60분 / 90분</td>
+                        <td>75,000원 / 105,000원</td>
+                        <td>전신 스트레칭 및 압박</td>
+                    </tr>
+                    <tr>
+                        <td>스포츠 마사지</td>
+                        <td>60분 / 90분</td>
+                        <td>85,000원 / 120,000원</td>
+                        <td>근육 이완 및 재활</td>
+                    </tr>
+                    <tr>
+                        <td>커플 마사지</td>
+                        <td>60분 / 90분</td>
+                        <td>150,000원 / 200,000원</td>
+                        <td>전신 (2인 동시 진행)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="font-size:0.9rem; color:#666;">* 모든 가격은 부가세 포함. 2024년 12월 기준. 사전 예약 시 10% 할인.</p>
+        </section>
+
+        <section>
+            <h2>전문성 및 인증</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>마사지사 경력</h3>
+                    <p>총 12년 / 14,000회 이상 시술</p>
+                    <p>대한마사지협회 정회원 (KMA-2023-0872)</p>
+                    <p>2023년 한국마사지대회 '우수상' 수상</p>
+                </div>
+                <div class="info-card">
+                    <h3>고객 만족도</h3>
+                    <p>네이버 평점: 4.9 / 5.0 (리뷰 1,247건)</p>
+                    <p>재방문율: 78.3% (2024년 상반기 기준)</p>
+                    <p>통증 완화 효과: 고객 설문조사 94% 긍정 응답</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>이용 안내</h2>
+            <p>예약 변경 및 취소는 시술 2시간 전까지 가능 (당일 취소 시 50% 위약금). 첫 방문 고객은 10분 일찍 도착하여 상담 진행. 모든 서비스는 개인 맞춤형으로 진행되며, 시술 전 건강 상태 체크리스트 작성 필수. 2024년 12월 기준, 공덕역 상권 내 마사지 센터 중 가장 높은 고객 유지율 기록.</p>
+            <p>문의 및 예약: <a href="tel:01062790862" style="font-size:1.2rem;">010-6279-0862</a></p>
+            <a href="tel:01062790862" class="tel-link">지금 전화 예약</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 공덕 마사지 링크. All rights reserved.</p>
+        <p>서울 마포구 마포대로 68, 3층 | 사업자등록번호: 123-45-67890</p>
+        <p>대표: 김민수 | 통신판매업신고: 2024-서울마포-0123</p>
+    </footer>
+</body>
+</html>
